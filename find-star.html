@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", "Major", "Leo"]
+
+    function check(star) {
+        let index = 0;
+        let flag = false;
+        for (let i = 0; i < array1.length; i++) {
+            if (star === array1[i]) {
+                index = i;
+                flag = true;
+            }
+        }
+        if (flag) {
+            alert(array2[index]);
+        } else alert(star + "was not found")
+    }
+
+    let a_star = prompt('enter a star');
+    check(a_star)
+</script>
+</body>
+</html>
